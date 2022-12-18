@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*, body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Ver-dark-cyan: hsl(158, 52%, 20%);
+    --Cream: hsl(30, 38%, 92%);
+    --Ver-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.container{
+    width: 100%;
+    background-color: var(--Cream);
+    height: 100vh;
+    display: flex;
+}
+
+.wrapper{
+    width: 600px;
+    margin: auto;
+    background-color: var(--White);
+    height: 450px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.imgwrapper{
+    height: 450px;
+}
+.img{
+    height: 100%;
+}
+
+.content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight{
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    /* opacity: 0.5; */
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.title{
+    font-family: "Fraunces";
+    margin-bottom: 2rem;
+    font-size: 32px;
+}
+
+.caption{
+    margin-bottom: 2rem;
+    font-family: "Montserrat";
+    font-size: 14px;
+    /* opacity: 0.5; */
+    color: var(--Dark-grayish-blue);
+
+}
+
+.price{
+    font-size: 28px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--Dark-cyan);
+    font-family: "Fraunces";
+}
+
+.old-price{
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 1rem;
+    font-family: "Montserrat";
+    color: var(--Dark-grayish-blue);
+}
+
+.atc{
+    font-family: "Montserrat";
+    color: var(--White);
+    font-size: 14px;
+    background-color: var(--Dark-cyan);
+    height: 2.5rem;
+    width: 14rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atc-icon{
+    margin-right: 8px;
+}
+
+.atc:hover{
+    background-color: var(--Ver-dark-cyan);
+    cursor: pointer;
+}
